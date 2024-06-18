@@ -1,0 +1,61 @@
+
+name: EOSSL_PLUS
+dataset_name: ScanNet
+data_dir: /data/scans
+checkpoint: None
+save_base_dir: workdir/
+frame_work: byol_pix_asymmetric_model_mix
+exchange_radio: 0.5
+update_epochs: [66, 133]
+# For testing
+replace_test: True
+
+# Generating Path
+segmentator_path: /home/WuYanhao/WorkSpace/Data_Prepare/cnpy-master/build/segmentator
+
+box_save_base_path: data/Scans_Box
+object_feature_save_base_path: data/Scans_Object_Features
+segment_save_base_path: data/Scans_Segment
+feature_save_base_path: data/Scans_Features
+
+
+# Segment Objects Params
+segment_para1: 1.5
+segment_para2: 300 # 1.5 / 300 large segments, 0.5 small segments
+
+# splits
+train_split: parametrizing
+val_split: verifying
+test_split: val
+pix_deal: true
+# optimization
+training:
+  max_epochs: 200
+  batch_size: 12
+  number_points: 80000
+  voxel_size: 0.05
+
+optimizer: torch.optim.AdamW
+optimizer_params:
+  lr: 3.6e-1
+  decay_lr: 1.0e-4
+  tau: 0.1
+  accum_step: 1
+  
+
+# network
+network:
+  feature_size: 128
+  backbone: MinkUNet
+
+# misc
+device: cuda
+num_device: 1
+threads: 16
+
+
+
+
+
+
+  
