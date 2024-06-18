@@ -4,6 +4,7 @@ Code for **Mitigating Object Dependencies: Improving Point Cloud Self-Supervised
 
 
 Tolist:
+
 1、Now the grapcut based unsupervised segmentation is not included in this project, since it is writen using C++. I will update it into this project as soon as possiable. 
 
 2、The fine-tune code will be updated to this project
