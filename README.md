@@ -51,7 +51,8 @@ You can refer to **[SpatioTemporalSegmentation](https://github.com/chrischoy/Spa
 
 Any questions, touch me at wuyanhao@stu.xjtu.edu.cn
 
-
+You can download the pre-trained model on ScanNet here:
+https://drive.google.com/file/d/1NOofbACbj79WqVSzdKqdrOcBtUPwkfHK/view?usp=drive_link
 
 # Citation
 
